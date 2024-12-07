@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+    <title>EMC</title>
+    <style>
+*
+{
+padding:0px;
+box-sizing: border-box;
+margin:0px;
+vertical-align:bottom;
+}
+.header
+{
+    width:auto;
+    height:50px;
+    text-align: center;
+    background-color: skyblue;
+    font-size: 25px;
+    padding-top: 12px;
+}
+.left
+{
+    height:520px;
+    width: 32%;
+    border:1px solid black;
+    display:inline-block;
+
+}
+.center
+{
+    height:520px;
+    width:32%;
+    border:1px solid black;
+    display:inline-block;
+}
+.right
+{
+    height:520px;
+    width : 32%;
+    border:1px solid black;
+    display:inline-block;
+}
+.dropdown
+{
+    text-align: center;
+    padding:5px auto 5px auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+select
+{
+    width:100px;
+}
+.Detail
+{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.name
+{
+    width:50%;
+    font-size: 15px;
+    display:inline-block;
+}
+.colon
+{
+    width:10%;
+    font-size: 15px;
+    display:inline-block;
+}
+.value
+{
+    width:35%;
+    font-size: 15px;
+    display:inline-block;
+}
+.align
+{
+    padding:4px 15px 4px 15px;
+}
+.name1
+{
+    padding-left: 15px;
+    width:50%;
+    font-size: 15px;
+    display:inline-block;
+}
+
+</style>
+<body>
+    <div class = "header">Dashboard</div>
+    <div class = "dropdown">Meter_ID:
+        <select>
+            <option>1</option>
+        </select>
+    </div>
+    <div class = "right">
+        <!-- <div class = "Detail">Details</div> -->
+            <div class = "align">
+                <div class = "name">Meter Name</div>
+                <div class = "colon">:</div>
+                <div class = "lable"></div>
+            </div>
+            <div class = "align">
+                <div class = "name">Meter ID</div>
+                <div class = "colon">:</div>
+                <div class = "lable"></div>
+            </div>
+            <div class = "align">
+                <div class = "name">Status</div>
+                <div class = "colon">:</div>
+                <div class = "lable"></div>
+            </div>
+            <div class = "align">
+                <div class = "name">Model</div>
+                <div class = "colon">:</div>
+                <div class = "lable"></div>
+            </div>
+            <div class = "align">
+                <div class = "name">Last Updated</div>
+                <div class = "colon">:</div>
+                <div class = "lable"></div>
+            </div>
+            <div class = "align">
+                <div class = "name">Kilo Watt_(Total)</div>
+                <div class = "colon">:</div>
+                <div class = "lable"></div>
+            </div>
+            <div class = "align">
+                <div class = "name1">Kilo Watt_(R)</div>
+                <div class = "colon">:</div>
+                <div class = "lable"></div>
+            </div>
+            <div class = "align">
+                <div class = "name1">Kilo Watt_(Y)</div>
+                <div class = "colon">:</div>
+                <div class = "lable"></div>
+            </div>
+            <div class = "align">
+                <div class = "name1">Kilo Watt_(B)</div>
+                <div class = "colon">:</div>
+                <div class = "lable"></div>
+            </div>
+            <div class = "align">
+                <div class = "name">Reactive Power_(Total)</div>
+                <div class = "colon">:</div>
+                <div class = "lable"></div>
+            </div>
+            <div class = "align">
+                <div class = "name">Power Factor_(Average)</div>
+                <div class = "colon">:</div>
+                <div class = "lable"></div>
+            </div>
+            <div class = "align">
+                <div class = "name1">Power Factor_(R)</div>
+                <div class = "colon">:</div>
+                <div class = "lable"></div>
+            </div>
+            <div class = "align">
+                <div class = "name1">Power Factor_(Y)</div>
+                <div class = "colon">:</div>
+                <div class = "lable"></div>
+            </div>
+            <div class = "align">
+                <div class = "name1">Power Factor_(B)</div>
+                <div class = "colon">:</div>
+                <div class = "lable"></div>
+            </div>
+            <div class = "align">
+                <div class = "name">Real Power_(Total)</div>
+                <div class = "colon">:</div>
+                <div class = "lable"></div>
+            </div>
+            <div class = "align">
+                <div class = "name1">Real Power_(R)</div>
+                <div class = "colon">:</div>
+                <div class = "lable"></div>
+            </div>
+            <div class = "align">
+                <div class = "name1">Real Power_(Y)</div>
+                <div class = "colon">:</div>
+                <div class = "lable"></div>
+            </div>
+            <div class = "align">
+                <div class = "name1">Real Power_(B)</div>
+                <div class = "colon">:</div>
+                <div class = "lable"></div>
+            </div>
+        </div>
+    <div class = "center">
+        <!-- <div class = "Detail">Details</div> -->
+        
+        <div class = "align">
+            <div class = "name">Voltage Line to Line (Average)</div>
+            <div class = "colon">:</div>
+            <div class = "lable"></div>
+        </div>
+        <div class = "align">
+            <div class = "name1">Voltage_RY</div>
+            <div class = "colon">:</div>
+            <div class = "lable"></div>
+        </div>
+        <div class = "align">
+            <div class = "name1">Voltage_YB</div>
+            <div class = "colon">:</div>
+            <div class = "lable"></div>
+        </div>
+        <div class = "align">
+            <div class = "name1">Voltage_BR</div>
+            <div class = "colon">:</div>
+            <div class = "lable"></div>
+        </div>
+        <div class = "align">
+            <div class = "name">Voltage Line to Neutral_(Average)</div>
+            <div class = "colon">:</div>
+            <div class = "lable"></div>
+        </div> <div class = "align">
+            <div class = "name1">Voltage_(R)</div>
+            <div class = "colon">:</div>
+            <div class = "lable"></div>
+        </div>
+        <div class = "align">
+            <div class = "name1">Voltage_(Y)</div>
+            <div class = "colon">:</div>
+            <div class = "lable"></div>
+        </div>
+        <div class = "align">
+            <div class = "name1">Voltage_(B)</div>
+            <div class = "colon">:</div>
+            <div class = "lable"></div>
+        </div>
+    </div>
+    <div class = "left">
+        <!-- <div class = "Detail">Details</div> -->
+    </div>
+
+
+    
+</body>
+</html>
